@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plugin</title>
+
+	<style>
+		body{
+			margin: 0;
+			font-family: sans-serif;
+		}
+		nav{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			background-color: #fff;
+			text-align: right;
+		}
+		.mainMenu{
+			letter-spacing: normal;
+			padding: 0;
+			margin: 0;
+		}
+		nav>a{
+			float: left;
+		}
+		.mainMenu li{
+			display: inline-block;
+		}
+		.mainMenu li a{
+			display: block;
+			text-transform: uppercase;
+			padding: 0 20px;
+			color: #222;
+			text-decoration: none;
+			transition: all .3s;
+		}
+		.mainMenu li a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+		section{
+			height: 100vh;
+		}
+		section:nth-child(odd){
+			background-color: #1abc9c
+		}
+		section:nth-child(even){
+			background-color: #e74c3c;
+		}
+	</style>
+</head>
+<body>
+	
+	<nav>
+		<a href="http://google.com">Logo</a>
+		<ul class="mainMenu">
+			<li><a href="#section_1">Section 1</a></li>
+			<li><a href="#section_2">Section 2</a></li>
+			<li><a href="#section_3">Section 3</a></li>
+			<li><a href="#section_4">Section 4</a></li>
+		</ul>
+	</nav>
+
+	<section id="section_1"></section>
+	<section id="section_2"></section>
+	<section id="section_3"></section>
+	<section id="section_4"></section>
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.testPlug.js"></script>
+
+	<script>
+
+		$('.mainMenu a').testPlug();
+	</script>
+</body>
+</html>

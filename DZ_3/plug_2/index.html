@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plug2</title>
+	<link rel="stylesheet" href="blurPlug.css">
+
+	<style>
+		body{
+			margin: 0;
+		}
+		section{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+  			position: relative;
+  			z-index: 1;
+		}
+		#blurPlug{
+			height: 80%;
+			width: 80%;
+			background-color: #000;
+			background-image: url(img/bg.jpg);
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+
+	</style>
+</head>
+<body>
+	
+	<section>
+		<div id="blurPlug">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore impedit rem placeat architecto, deserunt nihil quis tempora facere. Aliquam non numquam deleniti iusto dolore accusantium, veniam, tenetur recusandae obcaecati modi!
+		</div>
+	</section>
+	
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="jquery.blurPlug.js"></script>
+	<script>
+		$('#blurPlug').blurPlug({
+			filter: 'sepia',
+			value: 100
+		});
+	</script>
+</body>
+</html>
