@@ -5,7 +5,8 @@
 
 		var conf = $.extend({
 			filter: 'blur',
-			value: '10px'
+			value: '10px',
+			SlideSpeed: '3000'
 		}, conf)
 
 
@@ -87,7 +88,7 @@
 				
 				});
 
-       		}, 3000);
+       		}, conf.SlideSpeed);
 			   
 			
 			var bgImg = $(it).css('background-image');
