@@ -62,6 +62,8 @@
 				i=j;
 				var bgImg = $(it).css('background-image');
 				$('.filtered').css('background-image', bgImg);
+				$('.dot').css('background-color', 'rgba(0, 136, 255, .7)');
+				$('.dot:eq('+i+')').css('background-color', 'red');
 			});
 
 
