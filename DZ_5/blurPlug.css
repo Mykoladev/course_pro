@@ -1,22 +1,48 @@
+
+.leftbutton{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 136, 255, .5);
+	text-align: center;
+	border-radius: 25px;
+	top: 50%;
+	}
+
+.rightbutton{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(0, 136, 255, .5);
+	text-align: center;
+	right: 0;
+	top: 50%;
+	border-radius: 25px;
+}
 .dots{
     height: 50px;
     width: 100%;
     position: absolute;
     display: flex;
-    
     align-items: center;
     justify-content: center;
+	bottom: 0;
     
 }
-
 .dot{
     height: 30px;
     width: 30px;
     margin: 20px;
     border-radius: 25px; 
-    background-color: rgba(0, 136, 255, .7);
+    background-color: rgba(0, 136, 255, .5);
 }
 .dot:hover{
+    background-color: red;
+}
+.rightbutton:hover{
+    background-color: red;
+}
+.leftbutton:hover{
     background-color: red;
 }
 
@@ -50,3 +76,6 @@
 	-webkit-filter: invert(30%);
 	filter: invert(30%);
 }
+
+
+
