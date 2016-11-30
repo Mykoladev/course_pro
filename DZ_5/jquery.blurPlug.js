@@ -71,30 +71,38 @@
   			setInterval(function(){
 				$(it).animate({
 					// width: 0,
-					opacity: 0}, 500, function() {
+					opacity: 0}, 1000, function() {
 					if(i>images.length-1){
 						i=0;
 					}
 					console.log(i);
 				$('.dot').css('background-color', 'rgba(0, 136, 255, .7)');
 				$('.dot:eq('+i+')').css('background-color', 'red');
-				$(this).css('background','url(img/'+images[i++]+')').animate({
+				$(it).css('background','url(img/'+images[i++]+')').animate({
 					//  width: '100%',
-					opacity: 1},500, function(){
-						var bgImg = $(it).css('background-image');
-						$('.filtered').css('background-image', bgImg);	
+					opacity: 1},1000); 
+					var bgImg = $(it).css('background-image');
+					$('.filtered').animate({
+						opacity: 0
+					},500, function(){
+						$('.filtered').css('background-image', bgImg).animate({
+						opacity: 1
+					},1000);
 					});
+						
+					
 
 				
 				});
 
-       		}, conf.SlideSpeed);
+}, conf.SlideSpeed);
 			   
 			
 			var bgImg = $(it).css('background-image');
-			// $(this).find( 'img' ); *****
+			// // $(this).find( 'img' ); *****
 			section.append('<div class="filtered">');
 			$('.filtered').css('background-image', bgImg);
+			
 			////////////////////////////
 			//////TODO: Switch. Css method
 			////////////////////////////
