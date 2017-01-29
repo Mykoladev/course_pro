@@ -1,2 +1,2 @@
 # course_pro
-this reposetory include plagins and my first JavaScript code
+this reposetory include  my first plagins and JavaScript code
